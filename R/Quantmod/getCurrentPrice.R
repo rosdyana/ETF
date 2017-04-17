@@ -23,7 +23,10 @@ symbols <- c('QAI','MNA','CPI','FTLS','BTAL','CSLS', # Alternative ETFs
              'ARKK','FCOM','XLU','INXX','FUTY',
              'TBF','FLAT','TAPR', # Inverse
              'DWT','DNO','SH','DRIP','LABS',
-             'TBT','TMF','UCO','USLV','DZZ' # Leveraged)
+             'TBT','TMF','UCO','USLV','DZZ', # Leveraged
+             'VNQI','TAO','REET','VNQ','MRRL','SCHH', # Real Estate
+             'VXX','XIVH','VIXY' # Volatily
+             )
              
 # get quote from symbol using yahoo finance source
 getQuote(symbols, what=yahooQF("Last Trade (Price Only)"))
