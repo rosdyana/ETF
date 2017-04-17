@@ -1,7 +1,7 @@
 library(quantmod)
 
 startDate <- '2010-01-01'  # start of data
-endDate <-  '2017-04-01'   # end of data
+endDate <-  Sys.Date()     # end of data
 Sys.setenv(TZ="UTC")       # set time zone
 
 symbols <- c('QAI','MNA','CPI','FTLS','BTAL','CSLS', # Alternative ETFs
@@ -26,7 +26,10 @@ symbols <- c('QAI','MNA','CPI','FTLS','BTAL','CSLS', # Alternative ETFs
              'ARKK','FCOM','XLU','INXX','FUTY',
              'TBF','FLAT','TAPR', # Inverse
              'DWT','DNO','SH','DRIP','LABS',
-             'TBT','TMF','UCO','USLV','DZZ' # Leveraged)
+             'TBT','TMF','UCO','USLV','DZZ', # Leveraged
+             'VNQI','TAO','REET','VNQ','MRRL','SCHH', # Real Estate
+             'VXX','XIVH','VIXY' # Volatily
+             )
 
 getSymbols(symbols, from=startDate, to=endDate)
 
